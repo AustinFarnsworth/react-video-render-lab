@@ -1,6 +1,9 @@
 import axios from "axios";
 
-const KEY = "AIzaSyDn_YvpnSxDcOOrgb3YWvvIowNYZrmBI0I";
+require("dotenv").config();
+
+// const KEY = "AIzaSyDn_YvpnSxDcOOrgb3YWvvIowNYZrmBI0I";
+const KEY = process.env.REACT_APP_API_KEY;
 
 export default axios.create({
   baseURL: "https://www.googleapis.com/youtube/v3",
